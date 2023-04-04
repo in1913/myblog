@@ -198,8 +198,8 @@ function formFunc(){
         errorbox.innerHTML = "[ERROR] 이메일과 메세지를 입력해주세요."; 
     }else if(contact.formname.value != "" && contact.formemail.value != "" && contact.formtext.value != ""){
         $(".errorbox").css({
-            backgroundColor : "transparent"
+            backgroundColor : "rgb(0, 205, 0)"
         });
-        errorbox.innerHTML = ""; 
+        errorbox.innerHTML = "[SUCCESS] 입력되었습니다."; 
     }
 }
