@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My@blog:~$</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/popper.min.js">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top pl-2 pr-2">
+        <a class="navbar-brand" href="#"><span>My@blog</span><span>:</span><span class="file" id="file">~</span><span>$</span></a>
+        <a class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="change-menu ri-menu-3-line"></i>
+            <i class="change-menu ri-close-line" style="display: none;"></i>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a class="nav-link text-white rounded-pill" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white rounded-pill" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white rounded-pill" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white rounded-pill" href="#portfolio">Portfolio</a>
+                    </li>
+                <li class="nav-item">
+                <a class="nav-link text-white rounded-pill" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="scrollshow">
+        </div>
+    </nav>
+    <div class="home" id="home">
+        <div class="typing-box">
+            <p> $ Choi-inyoung</p> <p class="typing" id="typing"></p>
+        </div>
+    </div>
+
+
+    <div class="about" id="about">
+        <!-- <div class="introbox">
+            <p> $&nbsp;vi About.txt</p>
+        </div> -->
+        <div id="introduce">
+        </div>
+        <div class="about-contact rounded-pill p-3">
+            <a href="#contact" class="text-white text-decoration-none about-contact-link">Contact</a>
+        </div>
+    </div>
+
+    <div class="skills d-flex flex-column justify-content-center align-items-center" id="skills">
+        <!-- <p class="skills-title"> $&nbsp;./Skills</p> -->
+        <div class="row skillbox">
+            <div class="col-4 col-sm-6 imgbox">
+                <img src="images/webpublishing.png" alt="webpublishing">
+                <div id="skill1" class="skillbar"></div>
+            </div>
+            <div class="col-4 col-sm-6 imgbox">
+                <img src="images/js.png" alt="javascript">
+                <div id="skill2" class="skillbar"></div>
+            </div>
+            <div class="col-4 col-sm-6 imgbox">
+                <img src="images/java.png" alt="java">
+                
+                <div id="skill3" class="skillbar"></div>
+            </div>
+            <div class="col-4 col-sm-6 imgbox">
+                <img src="images/python.png" alt="python">
+                
+                <div id="skill4" class="skillbar"></div>
+            </div>
+            <div class="col-4 col-sm-6 imgbox">
+                <img src="images/react.png" alt="react">
+                
+                <div id="skill5" class="skillbar"></div>
+            </div>
+            <div class="col-4 col-sm-6 imgbox">
+                <img src="images/mysql.png" alt="mysql">
+                
+                <div id="skill6" class="skillbar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio d-flex justify-content-center align-items-center" id="portfolio">
+        <!-- <p class="port-title"> $&nbsp;./Portfolio</p> -->
+        <div class="row">
+            <div class="col-6 col-md-12">
+                <div class="portimg">
+                    <a href="#">
+                        <img src="images/shalla.png" alt="shallahotelweb">
+                    <p>Hotel Shalla</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-12">
+                <div class="portimg">
+                    <a href="#">
+                        <img src="images/cafework.png" alt="cafework">
+                        <p>The Cafe</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-12">
+                <div class="portimg">
+                    <a href="#">
+                        <img src="images/rps.png" alt="rpsgame">
+                        <p>RPS Game</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-12">
+                <div class="portimg">
+                    <a href="#">
+                        <img src="images/weather.png" alt="weatherapp">
+                        <p>Weather App</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="contact d-flex flex-column justify-content-center align-items-center" id="contact">
+        <!-- <p class="contact-title"> $&nbsp;vi Contact.txt</p> -->
+        <form name="contactform">
+            <input class="name" type="text" name="formname" placeholder="이름"><br>
+            <input class="email" type="text" name="formemail" placeholder="이메일 주소"><br>
+            <textarea spellcheck="false" name="formtext" class="message" cols="30" rows="10" placeholder="메세지"></textarea><br>
+            <input type="button" value=":wq" class="formbtn" onclick="formFunc()">
+        </form>
+        <div class="errorbox" id="errorbox">
+        </div>
+    </div>
+    
+    <div class="sns">
+        <a href="#">
+            <img src="images/instagramwhite.png" alt="instagram">
+        </a>
+        <a href="#">
+            <img src="images/facebookwhite.png" alt="facebook">
+        </a>
+        <a href="#">
+            <img src="images/kakao-talkwhite.png" alt="kakao-talk">
+        </a>
+        <a href="#">
+            <img src="images/githubwhite.png" alt="github">
+        </a>
+    </div>
+    <div class="copy">
+        &copy; 2023. inyoung. all rights reserved. <br>
+    </div>
+
+    <div class="nav-menu move">
+        <ul class="gnb">
+            <li><a href="#home" class="text-white rounded-pill p-2 menu-link">Home</a></li>
+            <li><a href="#about" class="text-white rounded-pill p-2 menu-link">About</a></li>
+            <li><a href="#skills" class="text-white rounded-pill p-2 menu-link">Skills</a></li>
+            <li><a href="#portfolio" class="text-white rounded-pill p-2 menu-link">Portfolio</a></li>
+            <li><a href="#contact" class="text-white rounded-pill p-2 menu-link">Contact</a></li>
+        </ul>
+    </div>
+    <script src="js/progressbar.js"></script>
+    <script src="js/typed.umd.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skill.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
