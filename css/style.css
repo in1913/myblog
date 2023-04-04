@@ -336,12 +336,21 @@ form .formbtn{
 .sns img:not(last-child){
     margin-right: .5vh;
 }
+.license{
+    width: 100%;
+    text-align: center;
+    background-color:#161616;
+}
+.license a{
+    color: #969696;
+    font-size: .5vh;
+}
 .copy{
     width: 100%;
-    height: 50px;
+    height: 4vh;
     text-align: center;
     font-size: 2vh;
-    line-height: 50px;
+    line-height: 4vh;
     background-color: #161616;
     color: #fff;
 }
